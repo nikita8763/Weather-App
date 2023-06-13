@@ -3,11 +3,11 @@ const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '4ba401fd93mshc5bed3a6b73fd20p17146bjsnec9d948278a5',
-		'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
+		'X-RapidAPI-Host': 'national-weather-service.p.rapidapi.com'
 	}
 };
 
-fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Delhi',options)
+fetch('https://national-weather-service.p.rapidapi.com/zones/%7Btype%7D/%7BzoneId%7D/forecast?city=Delhi',options)
 	.then(response => response.json())
 	.then((response) => {
 		
